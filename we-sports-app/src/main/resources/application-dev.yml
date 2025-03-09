@@ -13,10 +13,19 @@ thread:
         policy: CallerRunsPolicy
 
 # 数据库配置 - sharding-jdbc 分库分表
+#spring:
+#  datasource:
+#    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+#    url: jdbc:shardingsphere:classpath:sharding/sharding-jdbc-dev.yaml
+
+# 数据库配置 - 普通配置
 spring:
   datasource:
-    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
-    url: jdbc:shardingsphere:classpath:sharding/sharding-jdbc-dev.yaml
+#    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3307/we_sports_db?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+    username: root
+    password: 123456
 
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
@@ -81,7 +90,7 @@ xxl:
     accessToken: default_token
     # 注册地址
     admin:
-      addresses: http://localhost:9090/xxl-job-admin
+      addresses: http://localhost:8080/xxl-job-admin
     # 注册执行器
     executor:
       #  执行器注册 [选填]：优先使用该配置作为注册地址，为空时使用内嵌服务 ”IP:PORT“ 作为注册地址。从而更灵活的支持容器类型执行器动态IP和动态映射端口问题。

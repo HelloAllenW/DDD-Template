@@ -1,0 +1,1 @@
+package cn.helloallen.domain.xxx.service;

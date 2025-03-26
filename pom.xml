@@ -12,8 +12,9 @@
     <groupId>cn.helloallen</groupId>
     <artifactId>we-sports</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>pom</packaging> <!-- 关键：声明为父POM -->
 
+    <!-- 子模块列表 -->
     <modules>
         <module>we-sports-app</module>
         <module>we-sports-domain</module>
@@ -46,6 +47,22 @@
             <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
+
+    <!-- 公共依赖（子模块自动继承） -->
+    <dependencies>
+        <!-- Swagger 3.0 核心依赖 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <!-- 增强型Swagger UI（可选，提供更美观的界面） -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>

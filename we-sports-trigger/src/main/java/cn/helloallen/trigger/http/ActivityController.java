@@ -11,13 +11,16 @@ import cn.helloallen.domain.pojo.vo.PageResult;
 import cn.helloallen.domain.service.ActivityService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+@Slf4j
 @Tag(name = "活动详情管理")
 @RequestMapping("activity")
 @RestController
+@Validated // 启用方法级验证
 public class ActivityController {
 
     @Autowired
@@ -101,6 +104,7 @@ public class ActivityController {
     @Operation(summary = "发起活动")
     @ResponseBody
     public RestResult<Boolean> addActivity(@RequestBody @Validated(CreateGroup.class) ActivityDTO activityDTO) {
+        log.info("测试测试");
         Boolean result = activityService.addActivity(activityDTO);
         return new RestResult<>(ResultCodeConstant.CODE_000000, ResultCodeConstant.CODE_000000_MSG, result);
     }

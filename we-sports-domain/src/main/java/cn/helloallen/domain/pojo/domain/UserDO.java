@@ -68,7 +68,6 @@ public class UserDO {
     /**
      * 用户ID
      */
-    @TableId(type = IdType.AUTO)
     @Schema(description = "用户ID")
     private Integer id;
 

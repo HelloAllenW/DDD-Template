@@ -64,7 +64,6 @@ public class SportsFacilityDO {
     /**
      * 运动场所ID
      */
-    @TableId(type = IdType.AUTO)
     @Schema(description = "运动场所ID")
     private Integer id;
 }

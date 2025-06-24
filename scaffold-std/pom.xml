@@ -132,7 +132,7 @@
 
     <description>ddd scaffold std by xiaofuge</description>
 
-    <url>https://spring.io/projects/spring-boot/we-sports</url>
+    <url>https://spring.io/projects/spring-boot/we</url>
 
     <developers>
         <developer>
@@ -151,6 +151,6 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/spring-projects/spring-boot/we-sports</url>
+        <url>https://github.com/spring-projects/spring-boot/we</url>
     </scm>
 </project>

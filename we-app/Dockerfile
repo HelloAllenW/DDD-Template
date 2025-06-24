@@ -12,6 +12,6 @@ ENV TZ=PRC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # 添加应用
-ADD target/we-sports-app-app.jar /we-sports-app-app.jar
+ADD target/we-app-app.jar /we-app-app.jar
 
-ENTRYPOINT ["sh","-c","java -jar $JAVA_OPTS /we-sports-app-app.jar $PARAMS"]
+ENTRYPOINT ["sh","-c","java -jar $JAVA_OPTS /we-app-app.jar $PARAMS"]

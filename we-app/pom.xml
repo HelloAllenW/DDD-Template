@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.helloallen</groupId>
-        <artifactId>we-sports</artifactId>
+        <artifactId>we</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>we-sports-app</artifactId>
+    <artifactId>we-app</artifactId>
 
     <packaging>jar</packaging>
 
@@ -118,16 +118,16 @@
         <!-- 工程模块；启动依赖 trigger->domain, infrastructure-->
         <dependency>
             <groupId>cn.helloallen</groupId>
-            <artifactId>we-sports-trigger</artifactId>
+            <artifactId>we-trigger</artifactId>
         </dependency>
         <dependency>
             <groupId>cn.helloallen</groupId>
-            <artifactId>we-sports-infrastructure</artifactId>
+            <artifactId>we-infrastructure</artifactId>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>we-sports-app</finalName>
+        <finalName>we-app</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>

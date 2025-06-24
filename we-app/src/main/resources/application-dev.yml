@@ -49,7 +49,7 @@ redis:
 # Dubbo
 dubbo:
   application:
-    name: we-sports
+    name: we
     version: 1.0.0
   registry:
     id: nacos-registry

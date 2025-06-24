@@ -1,4 +1,4 @@
-# 我们爱运动 - server
+# DDD-Template
 
 ## 启动项目
 1. 启动nacos

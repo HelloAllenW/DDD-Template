@@ -3,67 +3,65 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.helloallen</groupId>
-        <artifactId>we-sports</artifactId>
+        <artifactId>we</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <!-- 如果父POM不在上级目录，需指定relativePath -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>we-sports-trigger</artifactId>
+    <artifactId>we-domain</artifactId>
 
+    <!-- 可添加子模块特有的依赖 -->
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-tx</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.xuxueli</groupId>
-            <artifactId>xxl-job-core</artifactId>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client-java</artifactId>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.3.1</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>3.0.2</version> <!-- 使用最新版本 -->
         </dependency>
 
         <!-- 系统模块 -->
         <dependency>
             <groupId>cn.helloallen</groupId>
-            <artifactId>we-sports-types</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.helloallen</groupId>
-            <artifactId>we-sports-domain</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.helloallen</groupId>
-            <artifactId>we-sports-api</artifactId>
+            <artifactId>we-types</artifactId>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>we-sports-trigger</finalName>
+        <finalName>we-domain</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -76,6 +74,15 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <compilerVersion>${java.version}</compilerVersion>
+                </configuration>
             </plugin>
         </plugins>
     </build>

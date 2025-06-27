@@ -21,7 +21,7 @@ import java.util.UUID;
 
 /**
  * 单元测试
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author wanghailun helloallen.cn @小傅哥
  */
 @Slf4j
 @RunWith(SpringRunner.class)

@@ -5,13 +5,10 @@
         <groupId>cn.helloallen</groupId>
         <artifactId>we</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <!-- 如果父POM不在上级目录，需指定relativePath -->
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>we-domain</artifactId>
 
-    <!-- 可添加子模块特有的依赖 -->
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -41,18 +38,6 @@
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.3.1</version>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
-            <version>3.0.2</version> <!-- 使用最新版本 -->
-        </dependency>
-
         <!-- 系统模块 -->
         <dependency>
             <groupId>cn.helloallen</groupId>

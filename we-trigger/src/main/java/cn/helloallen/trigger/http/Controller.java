@@ -1,4 +1,4 @@
-package cn.helloallen.trigger.http;
+package cn.helloallen.xfg.frame.trigger.http;
 
 import cn.helloallen.types.common.Constants;
 import cn.helloallen.types.model.Response;
@@ -18,7 +18,7 @@ public class Controller {
     private ThreadPoolExecutor threadPoolExecutor;
 
     /**
-     * http://localhost:8091/success
+     * http://localhost:8090/success
      */
     @RequestMapping("/success")
     public Response<String> success() {

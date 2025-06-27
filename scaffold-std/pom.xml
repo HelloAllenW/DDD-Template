@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.fuzhengwei</groupId>
+    <groupId>io.github.wanghailun</groupId>
     <artifactId>ddd-scaffold-std</artifactId>
     <version>1.0</version>
     <packaging>maven-archetype</packaging>
@@ -138,8 +138,8 @@
         <developer>
             <name>xiaofuge</name>
             <email>184172133@qq.com</email>
-            <organization>fuzhengwei</organization>
-            <organizationUrl>https://github.com/fuzhengwei</organizationUrl>
+            <organization>wanghailun</organization>
+            <organizationUrl>https://github.com/wanghailun</organizationUrl>
         </developer>
     </developers>
 

@@ -8,7 +8,7 @@ import java.time.Duration;
 
 /**
  * Redis 服务 - Redisson
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author wanghailun helloallen.cn @小傅哥
  */
 @Service("redissonService")
 public class RedissonService implements IRedisService {

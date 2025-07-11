@@ -5,79 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23b73409-e7b0-4531-9040-0fb2bac9ef56" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/main/java/config/RedisClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/main/java/config/RedisClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/main/java/config/RedisClientConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/main/java/config/RedisClientConfigProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/test/java/test/infrastructure/persistent/UserOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/test/java/test/infrastructure/persistent/UserOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/test/java/test/infrastructure/redis/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-app/src/test/java/test/infrastructure/redis/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-infrastructure/src/main/java/infrastructure/redis/IRedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-infrastructure/src/main/java/infrastructure/redis/IRedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-infrastructure/src/main/java/infrastructure/redis/RedissonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-infrastructure/src/main/java/infrastructure/redis/RedissonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-trigger/src/main/java/trigger/listener/MQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/__rootArtifactId__-trigger/src/main/java/trigger/listener/MQListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scaffold-std/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/RedisClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/RedisClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/RedisClientConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/RedisClientConfigProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/ApiTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/infrastructure/persistent/UserOrderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/infrastructure/redis/RedisTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/we-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/config/GlobalExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/constant/ResultCodeConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/dao/ActivityMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/dao/ActivityParticipantMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/dao/ActivityParticipantsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/dao/SportsFacilityMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/dao/UserActivityLikesMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/dao/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/exception/BusinessException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/domain/ActivityCommentDO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/domain/ActivityDO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/domain/ActivityParticipantDO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/domain/SportsFacilityDO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/domain/UserActivityLikeDO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/domain/UserDO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/ActivityCommentDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/ActivityDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/ActivityLikeDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/ActivityParticipantDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/CreateGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/DeleteGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/RestResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/UpdateGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/UserLocationDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/dto/UserLoginDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/ActivityQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/FacilityDetailQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/LocationQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/QueryGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/SurroundingFacilitiesQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/UserLocationQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/UserPositionQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/query/UserQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/vo/ActivityVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/vo/LocationVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/pojo/vo/PageResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/service/ActivityService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/service/HomeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/service/impl/ActivityServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/service/impl/HomeServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/redis/IRedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/redis/IRedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/XxlJobAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/XxlJobAutoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/redis/RedissonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/redis/RedissonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/http/ActivityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/http/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/http/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/http/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/http/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/job/XXLJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/job/XXLJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/listener/MQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/listener/MQListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,39 +33,45 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2z4QAIM8WQlUYjxv6hDZ795pwzC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyProject\DDD-Template\script\sql" />
+      <recent name="E:\MyProject\DDD-Template\script\bin" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -189,6 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1750987722972</updated>
       <workItem from="1750987727610" duration="465000" />
+      <workItem from="1752203111503" duration="4094000" />
+      <workItem from="1752214736874" duration="382000" />
     </task>
     <servers />
   </component>

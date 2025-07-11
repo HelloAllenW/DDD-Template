@@ -1,0 +1,63 @@
+server:
+  port: 8091
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
+# 数据库配置 - 使用本地MySQL，但简化为单库单表
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3307/we_DDD?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456  # 请根据您的MySQL密码修改
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 60000
+      max-lifetime: 1800000
+  # 禁用自动配置
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.redisson.spring.starter.RedissonAutoConfiguration
+      - org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration
+      - org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration
+      - org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location: classpath:/mybatis/config/mybatis-config.xml
+
+# 完全禁用 Dubbo
+dubbo:
+  enabled: false
+
+# 完全禁用 XXL-Job
+xxl:
+  job:
+    enabled: false
+
+# 完全禁用 RocketMQ
+rocketmq:
+  enabled: false
+
+# 完全禁用 Redis
+redis:
+  enabled: false
+
+# 日志
+logging:
+  level:
+    root: info
+    cn.helloallen: debug
+  config: classpath:logback-spring.xml 

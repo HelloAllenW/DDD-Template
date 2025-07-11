@@ -1,45 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <!-- 1. 定义父项目，用于集成公共配置 -->
     <parent>
         <groupId>cn.helloallen</groupId>
         <artifactId>we</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <!-- 2. 定义当前项目，用于标识当前项目 -->
     <artifactId>we-app</artifactId>
-
+    <!-- 定义当前项目的打包方式 -->
     <packaging>jar</packaging>
 
+    <!-- 3. 定义当前项目的依赖 -->
     <dependencies>
+
+        <!-- 3.1 Spring Boot 相关依赖 -->
+
+        <!-- Spring Boot Web启动器，提供Web开发功能 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- Spring Boot测试启动器，仅在测试时使用 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
+
+        <!-- 3.2 数据库相关依赖 -->
+
+        <!-- MyBatis Spring Boot集成 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
         <!-- # 多数据源路由配置
              # mysql 5.x driver-class-name: com.mysql.jdbc.Driver    mysql-connector-java 5.1.34
-             # mysql 8.x driver-class-name: com.mysql.cj.jdbc.Driver mysql-connector-java 8.0.22-->
+             # mysql 8.x driver-class-name: com.mysql.cj.jdbc.Driver mysql-connector-java 8.0.22 -->
         <dependency>
+            <!-- MySQL数据库驱动 -->
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- ShardingSphere分库分表组件 -->
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>shardingsphere-jdbc-core</artifactId>
+        </dependency>
+
+        <!-- 3.3 工具类库依赖 -->
+
+        <!-- 阿里巴巴的JSON处理库 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -48,10 +72,12 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+        <!-- Lombok代码生成工具 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <!-- Google的Java工具库 -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
@@ -78,6 +104,10 @@
             <artifactId>converter-gson</artifactId>
             <version>2.9.0</version>
         </dependency>
+
+        <!-- 3.4 分布式服务相关依赖 -->
+
+        <!-- Dubbo RPC框架 -->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
@@ -86,26 +116,27 @@
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
+        <!-- Nacos服务发现和配置中心 -->
         <dependency>
             <groupId>com.alibaba.nacos</groupId>
             <artifactId>nacos-client</artifactId>
         </dependency>
+        <!-- Redisson Redis客户端 -->
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson-spring-boot-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.apache.shardingsphere</groupId>
-            <artifactId>shardingsphere-jdbc-core</artifactId>
-        </dependency>
+        
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
         </dependency>
+        <!-- XXL-JOB分布式任务调度 -->
         <dependency>
             <groupId>com.xuxueli</groupId>
             <artifactId>xxl-job-core</artifactId>
         </dependency>
+        <!-- RocketMQ消息队列 -->
         <dependency>
             <groupId>org.apache.rocketmq</groupId>
             <artifactId>rocketmq-client-java</artifactId>
@@ -115,7 +146,7 @@
             <artifactId>rocketmq-spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- 工程模块；启动依赖 trigger->domain, infrastructure-->
+        <!-- 3.5 依赖项目内的trigger和infrastructure模块 -->
         <dependency>
             <groupId>cn.helloallen</groupId>
             <artifactId>we-trigger</artifactId>
@@ -126,8 +157,11 @@
         </dependency>
     </dependencies>
 
+    <!-- 4. 定义当前项目的构建配置 -->
     <build>
+        <!-- 指定最终生成的JAR包名称 -->
         <finalName>we-app</finalName>
+        <!-- 配置主资源目录，开启过滤功能，包含所有文件 -->
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -146,7 +180,9 @@
                 </includes>
             </testResource>
         </testResources>
+        <!-- 指定构建插件 -->
         <plugins>
+            <!-- 配置JUnit测试插件：Maven测试插件，跳过测试执行 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -159,6 +195,7 @@
                     </includes>
                 </configuration>
             </plugin>
+            <!-- 配置Spring Boot Maven插件：指定主类和JAR包布局 -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

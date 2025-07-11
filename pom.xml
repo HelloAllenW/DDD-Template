@@ -5,6 +5,7 @@
     <groupId>cn.helloallen</groupId>
     <artifactId>we</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!-- 打包方式为pom，表示这是一个父项目 -->
     <packaging>pom</packaging>
 
     <modules>
@@ -26,10 +27,10 @@
 
     <developers>
         <developer>
-            <name>xiaofuge</name>
-            <email>184172133@qq.com</email>
+            <name>wanghailun</name>
+            <email>hailun0815@163.com</email>
             <organization>wanghailun</organization>
-            <organizationUrl>https://github.com/wanghailun</organizationUrl>
+            <organizationUrl>https://github.com/HelloAllenW</organizationUrl>
         </developer>
     </developers>
 
@@ -40,12 +41,14 @@
         </license>
     </licenses>
 
+    <!-- 继承了Spring Boot的父POM，所以子模块中的Spring Boot相关依赖不需要版本号 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.12</version>
     </parent>
 
+    <!-- 在父POM中使用<dependencyManagement>来统一管理所有依赖的版本号 -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -178,11 +181,13 @@
 
     <build>
         <plugins>
+            <!-- 配置Maven原型插件：用于生成项目骨架 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-archetype-plugin</artifactId>
                 <version>3.2.0</version>
             </plugin>
+            <!-- 配置Maven编译插件：用于编译Java源代码 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -193,6 +198,7 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+            <!-- 配置Maven资源插件：用于处理资源文件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -201,6 +207,7 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+            <!-- 配置Maven版本插件：用于管理依赖的版本号 -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
@@ -210,6 +217,14 @@
     </build>
 
     <profiles>
+        <!-- 开发环境 -->
+        <!-- 
+        每个环境都配置了JVM参数：
+        - 内存设置: dev/test环境1G，prod环境6G
+        - 垃圾回收: 使用G1GC
+        - 日志配置: 包含GC日志和堆转储配置
+        - Spring Profile: 对应不同的application配置文件
+         -->
         <profile>
             <id>dev</id>
             <activation>
@@ -220,6 +235,7 @@
                 <profileActive>dev</profileActive>
             </properties>
         </profile>
+        <!-- 测试环境 -->
         <profile>
             <id>test</id>
             <properties>
@@ -227,6 +243,7 @@
                 <profileActive>test</profileActive>
             </properties>
         </profile>
+        <!-- 生产环境 -->
         <profile>
             <id>prod</id>
             <properties>

@@ -2,4 +2,5 @@ spring:
   config:
     name: we-app
   profiles:
-    active: dev
+    # 选择启动环境：
+    active: local

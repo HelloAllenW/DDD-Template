@@ -1,6 +1,7 @@
 package cn.helloallen.infrastructure.redis;
 
 import org.redisson.api.*;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -11,6 +12,7 @@ import java.time.Duration;
  * @author wanghailun helloallen.cn @小傅哥
  */
 @Service("redissonService")
+@ConditionalOnProperty(name = "redis.enabled", havingValue = "true", matchIfMissing = false)
 public class RedissonService implements IRedisService {
 
     @Resource

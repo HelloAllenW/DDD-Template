@@ -1,4 +1,4 @@
-package cn.helloallen.xfg.frame.trigger.http;
+package cn.helloallen.trigger.http;
 
 import cn.helloallen.types.common.Constants;
 import cn.helloallen.types.model.Response;

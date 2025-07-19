@@ -43,6 +43,12 @@ mvn clean package
 java -jar target/we-app-*.jar
 ```
 
+```bash
+# 直接启动
+cd we-app
+mvn spring-boot:run
+```
+
 ## 依赖环境
 
 - JDK 8+

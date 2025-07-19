@@ -5,20 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23b73409-e7b0-4531-9040-0fb2bac9ef56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/Note/开发技术.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/sql/employee_test.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/PluginAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/TransactionManagerAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/plugin/FieldEncryptionAndDecryptionMybatisPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/main/resources/mybatis/mapper/employee_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/main/resources/mybatis/mapper/employee_salary_adjust_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/main/resources/mybatis/mapper/employee_salary_mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/domain/IEmployeeServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/domain/ISalaryAdjustApplyServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/infrastructure/employee/IEmployeeDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/infrastructure/employee/IEmployeeSalaryAdjustDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/infrastructure/employee/IEmployeeSalaryDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/employee/model/entity/EmployeeInfoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/employee/repository/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/employee/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/employee/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/salary/model/aggregate/AdjustSalaryApplyOrderAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/salary/model/entity/EmployeeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/salary/model/entity/EmployeeSalaryAdjustEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/salary/model/valobj/EmployeePostVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/salary/repository/ISalaryAdjustRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/salary/service/ISalaryAdjustApplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/salary/service/SalaryAdjustApplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/dao/IEmployeeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/dao/IEmployeeSalaryAdjustDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/dao/IEmployeeSalaryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/po/EmployeePO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/po/EmployeeSalaryAdjustPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/po/EmployeeSalaryPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/employee/repository/SalaryAdjustRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/RedisClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/RedisClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/ThreadPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/ThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/ThreadPoolConfigProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/ThreadPoolConfigProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/XxlJobAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/java/cn/helloallen/config/XxlJobAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/redis/RedissonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-infrastructure/src/main/java/cn/helloallen/infrastructure/redis/RedissonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/job/XXLJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/job/XXLJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/listener/MQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/listener/MQListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/test/java/cn/bugstack/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/test/java/cn/bugstack/test/infrastructure/persistent/UserOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/infrastructure/persistent/UserOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-app/src/test/java/cn/bugstack/test/infrastructure/redis/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-app/src/test/java/cn/helloallen/test/infrastructure/redis/RedisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/xxx/adapter/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/xxx/model/aggregate/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/xxx/model/entity/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/xxx/model/valobj/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/xxx/repository/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/xxx/service/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/yyy/model/aggregate/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/employee/model/aggregate/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/yyy/model/entity/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/yyy/model/valobj/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/employee/model/valobj/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/yyy/repository/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-domain/src/main/java/cn/helloallen/domain/yyy/service/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/http/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/we-trigger/src/main/java/cn/helloallen/trigger/http/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +92,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2z4QAIM8WQlUYjxv6hDZ795pwzC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -132,6 +189,9 @@
       <workItem from="1750987727610" duration="465000" />
       <workItem from="1752203111503" duration="4094000" />
       <workItem from="1752214736874" duration="382000" />
+      <workItem from="1752907418067" duration="612000" />
+      <workItem from="1752919210195" duration="4054000" />
+      <workItem from="1752929677947" duration="1184000" />
     </task>
     <servers />
   </component>
